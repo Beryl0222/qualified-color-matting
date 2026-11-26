@@ -1,0 +1,54 @@
+[
+  {
+    "op": "add_scribbles",
+    "ids": [
+      "back",
+      "front",
+      "edge"
+    ]
+  },
+  {
+    "op": "separate",
+    "revision": 1
+  },
+  {
+    "op": "composite",
+    "background": "white",
+    "session": "mat0"
+  },
+  {
+    "op": "add_scribbles",
+    "ids": [
+      "conflict"
+    ]
+  },
+  {
+    "op": "separate",
+    "revision": 2
+  },
+  {
+    "op": "withdraw_scribble",
+    "id": "conflict"
+  },
+  {
+    "op": "withdraw_scribble",
+    "id": "edge"
+  },
+  {
+    "op": "separate",
+    "revision": 3
+  },
+  {
+    "op": "composite",
+    "background": "green",
+    "session": "mat1"
+  },
+  {
+    "op": "train",
+    "revision": 3
+  },
+  {
+    "op": "read_previous",
+    "session": "mat0"
+  }
+]
